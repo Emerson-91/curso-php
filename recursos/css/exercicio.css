@@ -10,7 +10,7 @@ body.exercicio {
 .principal {
     height: calc(100vh - 240px);
 }
- 
+
 .navegacao {
     grid-area: navegacao;
     display: flex;
