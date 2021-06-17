@@ -17,8 +17,7 @@ body.exercicio {
     justify-content: flex-end;
     align-items: center;
     background-color: #555;
-}
-
+} 
 .navegacao > a {
     text-decoration: none;
     color: #FFF;
