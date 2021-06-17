@@ -13,15 +13,22 @@
         <h2>Visualização do Exercício</h2>
     </header>
     <nav class="navegacao">
-        <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> 
+        <a href="exercicio.php" 
             class="verde">Sem formatação</a>
         <a href="index.php" class="vermelho">Voltar</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
-            <?php
-                include(__DIR__ . "\{$_GET['dir']}\{$_GET['file']}.php");
-            ?>
+        <?php
+        $valor = $_GET['p'];
+        if($valor == '1a'){
+            include_once("exercicios/exercicio1.php");
+        }
+        if($valor == '1b'){
+            include_once("exercicios/exercicio2.php");
+        }
+
+        ?>
         </div>
     </main>
     <footer class="rodape">
