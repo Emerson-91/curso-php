@@ -14,8 +14,8 @@
     </header>
     <nav class="navegacao">
         <a href="<?php
-        $valor = $_GET['p'];
-        $exercicio = "exercicios/exercicio".$valor.".php";
+        // "{$_GET['dir']}\\{$_GET['file']}.php"
+        $exercicio = $_GET['d'].$_GET['p'].".php";
         echo $exercicio;
         ?>
         " 
@@ -25,6 +25,7 @@
     <main class="principal">
         <div class="conteudo">
         <?php
+        // include(__DIR__ . "\\{$_GET['dir']}\\{$_GET['file']}.php");
             include_once($exercicio);
         ?>
         </div>
