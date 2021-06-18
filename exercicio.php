@@ -13,21 +13,19 @@
         <h2>Visualização do Exercício</h2>
     </header>
     <nav class="navegacao">
-        <a href="exercicio.php" 
+        <a href="<?php
+        $valor = $_GET['p'];
+        $exercicio = "exercicios/exercicio".$valor.".php";
+        echo $exercicio;
+        ?>
+        " 
             class="verde">Sem formatação</a>
         <a href="index.php" class="vermelho">Voltar</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
         <?php
-        $valor = $_GET['p'];
-        if($valor == '1a'){
-            include_once("exercicios/exercicio1.php");
-        }
-        if($valor == '1b'){
-            include_once("exercicios/exercicio2.php");
-        }
-
+            include_once($exercicio);
         ?>
         </div>
     </main>
