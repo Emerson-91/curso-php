@@ -14,7 +14,6 @@
     </header>
     <nav class="navegacao">
         <a href="<?php
-        // "{$_GET['dir']}\\{$_GET['file']}.php"
         $exercicio = $_GET['d']."\\".$_GET['p'].".php";
         echo $exercicio;
         ?>
